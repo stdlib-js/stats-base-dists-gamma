@@ -35,43 +35,30 @@ limitations under the License.
 
 > Gamma distribution.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-dists-gamma
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-gamma = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gamma@umd/browser.js' )
-```
-The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-base-dists-gamma/tags). For example,
-
-```javascript
-gamma = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gamma@v0.1.0-umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var gamma = require( 'path/to/vendor/umd/stats-base-dists-gamma/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gamma@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.gamma;
-})();
-</script>
+var gamma = require( '@stdlib/stats-base-dists-gamma' );
 ```
 
 #### gamma
@@ -151,21 +138,11 @@ var y = dist.cdf( 0.5 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gamma@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var objectKeys = require( '@stdlib/utils-keys' );
+var gamma = require( '@stdlib/stats-base-dists-gamma' );
 
 console.log( objectKeys( gamma ) );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -219,8 +196,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/stats-base-dists-gamma.svg
 [npm-url]: https://npmjs.org/package/@stdlib/stats-base-dists-gamma
 
-[test-image]: https://github.com/stdlib-js/stats-base-dists-gamma/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/stats-base-dists-gamma/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/stats-base-dists-gamma/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/stats-base-dists-gamma/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-base-dists-gamma/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-base-dists-gamma?branch=main
@@ -253,33 +230,33 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <toc-links> -->
 
-[@stdlib/stats/base/dists/gamma/ctor]: https://github.com/stdlib-js/stats-base-dists-gamma-ctor/tree/umd
+[@stdlib/stats/base/dists/gamma/ctor]: https://github.com/stdlib-js/stats-base-dists-gamma-ctor
 
-[@stdlib/stats/base/dists/gamma/entropy]: https://github.com/stdlib-js/stats-base-dists-gamma-entropy/tree/umd
+[@stdlib/stats/base/dists/gamma/entropy]: https://github.com/stdlib-js/stats-base-dists-gamma-entropy
 
-[@stdlib/stats/base/dists/gamma/kurtosis]: https://github.com/stdlib-js/stats-base-dists-gamma-kurtosis/tree/umd
+[@stdlib/stats/base/dists/gamma/kurtosis]: https://github.com/stdlib-js/stats-base-dists-gamma-kurtosis
 
-[@stdlib/stats/base/dists/gamma/mean]: https://github.com/stdlib-js/stats-base-dists-gamma-mean/tree/umd
+[@stdlib/stats/base/dists/gamma/mean]: https://github.com/stdlib-js/stats-base-dists-gamma-mean
 
-[@stdlib/stats/base/dists/gamma/mode]: https://github.com/stdlib-js/stats-base-dists-gamma-mode/tree/umd
+[@stdlib/stats/base/dists/gamma/mode]: https://github.com/stdlib-js/stats-base-dists-gamma-mode
 
-[@stdlib/stats/base/dists/gamma/skewness]: https://github.com/stdlib-js/stats-base-dists-gamma-skewness/tree/umd
+[@stdlib/stats/base/dists/gamma/skewness]: https://github.com/stdlib-js/stats-base-dists-gamma-skewness
 
-[@stdlib/stats/base/dists/gamma/stdev]: https://github.com/stdlib-js/stats-base-dists-gamma-stdev/tree/umd
+[@stdlib/stats/base/dists/gamma/stdev]: https://github.com/stdlib-js/stats-base-dists-gamma-stdev
 
-[@stdlib/stats/base/dists/gamma/variance]: https://github.com/stdlib-js/stats-base-dists-gamma-variance/tree/umd
+[@stdlib/stats/base/dists/gamma/variance]: https://github.com/stdlib-js/stats-base-dists-gamma-variance
 
-[@stdlib/stats/base/dists/gamma/cdf]: https://github.com/stdlib-js/stats-base-dists-gamma-cdf/tree/umd
+[@stdlib/stats/base/dists/gamma/cdf]: https://github.com/stdlib-js/stats-base-dists-gamma-cdf
 
-[@stdlib/stats/base/dists/gamma/logcdf]: https://github.com/stdlib-js/stats-base-dists-gamma-logcdf/tree/umd
+[@stdlib/stats/base/dists/gamma/logcdf]: https://github.com/stdlib-js/stats-base-dists-gamma-logcdf
 
-[@stdlib/stats/base/dists/gamma/logpdf]: https://github.com/stdlib-js/stats-base-dists-gamma-logpdf/tree/umd
+[@stdlib/stats/base/dists/gamma/logpdf]: https://github.com/stdlib-js/stats-base-dists-gamma-logpdf
 
-[@stdlib/stats/base/dists/gamma/mgf]: https://github.com/stdlib-js/stats-base-dists-gamma-mgf/tree/umd
+[@stdlib/stats/base/dists/gamma/mgf]: https://github.com/stdlib-js/stats-base-dists-gamma-mgf
 
-[@stdlib/stats/base/dists/gamma/pdf]: https://github.com/stdlib-js/stats-base-dists-gamma-pdf/tree/umd
+[@stdlib/stats/base/dists/gamma/pdf]: https://github.com/stdlib-js/stats-base-dists-gamma-pdf
 
-[@stdlib/stats/base/dists/gamma/quantile]: https://github.com/stdlib-js/stats-base-dists-gamma-quantile/tree/umd
+[@stdlib/stats/base/dists/gamma/quantile]: https://github.com/stdlib-js/stats-base-dists-gamma-quantile
 
 <!-- </toc-links> -->
 
