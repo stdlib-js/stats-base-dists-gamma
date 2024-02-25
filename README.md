@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gamma@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-base-dists-gamma/tags). For example,
+
+```javascript
 import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gamma@v0.2.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { Gamma, cdf, entropy, kurtosis, logcdf, logpdf, mean, mgf, mode, pdf, quantile, skewness, stdev, variance } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gamma@v0.2.1-esm/index.mjs';
+import { Gamma, cdf, entropy, kurtosis, logcdf, logpdf, mean, mgf, mode, pdf, quantile, skewness, stdev, variance } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gamma@esm/index.mjs';
 ```
 
 #### gamma
@@ -135,7 +140,7 @@ var y = dist.cdf( 0.5 );
 <script type="module">
 
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@esm/index.mjs';
-import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gamma@v0.2.1-esm/index.mjs';
+import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gamma@esm/index.mjs';
 
 console.log( objectKeys( gamma ) );
 
