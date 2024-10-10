@@ -35,20 +35,32 @@ limitations under the License.
 
 > Gamma distribution.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-dists-gamma
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gamma@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { Gamma, cdf, entropy, kurtosis, logcdf, logpdf, mean, mgf, mode, pdf, quantile, skewness, stdev, variance } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gamma@deno/mod.js';
+var gamma = require( '@stdlib/stats-base-dists-gamma' );
 ```
 
 #### gamma
@@ -108,7 +120,7 @@ The namespace contains a constructor function for creating a [gamma][gamma-distr
 <!-- </toc> -->
 
 ```javascript
-var Gamma = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gamma' ).Gamma;
+var Gamma = require( '@stdlib/stats-base-dists-gamma' ).Gamma;
 
 var dist = new Gamma( 2.0, 4.0 );
 
@@ -129,10 +141,91 @@ var y = dist.cdf( 0.5 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@deno/mod.js';
-import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gamma@deno/mod.js';
+var gammaRandomFactory = require( '@stdlib/random-base-gamma' ).factory;
+var filledarrayby = require( '@stdlib/array-filled-by' );
+var Float64Array = require( '@stdlib/array-float64' );
+var variance = require( '@stdlib/stats-base-variance' );
+var linspace = require( '@stdlib/array-base-linspace' );
+var mean = require( '@stdlib/stats-base-mean' );
+var abs = require( '@stdlib/math-base-special-abs' );
+var gamma = require( '@stdlib/stats-base-dists-gamma' );
 
-console.log( objectKeys( gamma ) );
+// Define the shape and scale parameters:
+var alpha = 3.0; // shape parameter (α)
+var beta = 2.0;  // scale parameter (β)
+
+// Generate an array of x values:
+var x = linspace( 0.0, 20.0, 100 );
+
+// Compute the PDF for each x:
+var gammaPDF = gamma.pdf.factory( alpha, beta );
+var pdf = filledarrayby( x.length, 'float64', gammaPDF );
+
+// Compute the CDF for each x:
+var gammaCDF = gamma.cdf.factory( alpha, beta );
+var cdf = filledarrayby( x.length, 'float64', gammaCDF );
+
+// Output the PDF and CDF values:
+console.log( 'x values:', x );
+console.log( 'PDF values:', pdf );
+console.log( 'CDF values:', cdf );
+
+// Compute statistical properties:
+var theoreticalMean = gamma.mean( alpha, beta );
+var theoreticalVariance = gamma.variance( alpha, beta );
+var theoreticalSkewness = gamma.skewness( alpha, beta );
+var theoreticalKurtosis = gamma.kurtosis( alpha, beta );
+
+console.log( 'Theoretical Mean:', theoreticalMean );
+console.log( 'Theoretical Variance:', theoreticalVariance );
+console.log( 'Skewness:', theoreticalSkewness );
+console.log( 'Kurtosis:', theoreticalKurtosis );
+
+// Generate random samples from the gamma distribution:
+var rgamma = gammaRandomFactory( alpha, beta );
+var n = 300;
+var samples = filledarrayby( n, 'float64', rgamma );
+
+// Compute sample mean and variance:
+var sampleMean = mean( n, samples, 1 );
+var sampleVariance = variance( n, 1, samples, 1 );
+
+console.log( 'Sample Mean:', sampleMean );
+console.log( 'Sample Variance:', sampleVariance );
+
+// Compare sample statistics to theoretical values:
+console.log( 'Difference in Mean:', abs( theoreticalMean - sampleMean ) );
+console.log( 'Difference in Variance:', abs( theoreticalVariance - sampleVariance ) );
+
+// Demonstrate that the sum of `k` gamma variables is a gamma-distributed sum of `k` gamma(α, β) variables with same β is `gamma(k*α, β)`:
+var k = 5;
+var sumSamples = new Float64Array( n );
+
+var sum;
+var i;
+var j;
+for ( i = 0; i < sumSamples.length; i++ ) {
+    sum = 0.0;
+    for ( j = 0; j < k; j++ ) {
+        sum += rgamma();
+    }
+    sumSamples[ i ] = sum;
+}
+
+// Theoretical parameters for the sum:
+var sumAlpha = k * alpha;
+var sumMean = gamma.mean( sumAlpha, beta );
+var sumVariance = gamma.variance( sumAlpha, beta );
+
+console.log( 'Sum Theoretical Mean:', sumMean );
+console.log( 'Sum Theoretical Variance:', sumVariance );
+
+// Compute sample mean and variance for the sum:
+var sumSampleMean = mean( sumSamples.length, sumSamples, 1 );
+var sumSampleVariance = variance( sumSamples.length, 1, sumSamples, 1 );
+
+console.log( 'Sum Sample Mean:', sumSampleMean );
+console.log( 'Sum Sample Variance:', sumSampleVariance );
 ```
 
 </section>
@@ -156,7 +249,7 @@ console.log( objectKeys( gamma ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -223,33 +316,33 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <toc-links> -->
 
-[@stdlib/stats/base/dists/gamma/ctor]: https://github.com/stdlib-js/stats-base-dists-gamma-ctor/tree/deno
+[@stdlib/stats/base/dists/gamma/ctor]: https://github.com/stdlib-js/stats-base-dists-gamma-ctor
 
-[@stdlib/stats/base/dists/gamma/entropy]: https://github.com/stdlib-js/stats-base-dists-gamma-entropy/tree/deno
+[@stdlib/stats/base/dists/gamma/entropy]: https://github.com/stdlib-js/stats-base-dists-gamma-entropy
 
-[@stdlib/stats/base/dists/gamma/kurtosis]: https://github.com/stdlib-js/stats-base-dists-gamma-kurtosis/tree/deno
+[@stdlib/stats/base/dists/gamma/kurtosis]: https://github.com/stdlib-js/stats-base-dists-gamma-kurtosis
 
-[@stdlib/stats/base/dists/gamma/mean]: https://github.com/stdlib-js/stats-base-dists-gamma-mean/tree/deno
+[@stdlib/stats/base/dists/gamma/mean]: https://github.com/stdlib-js/stats-base-dists-gamma-mean
 
-[@stdlib/stats/base/dists/gamma/mode]: https://github.com/stdlib-js/stats-base-dists-gamma-mode/tree/deno
+[@stdlib/stats/base/dists/gamma/mode]: https://github.com/stdlib-js/stats-base-dists-gamma-mode
 
-[@stdlib/stats/base/dists/gamma/skewness]: https://github.com/stdlib-js/stats-base-dists-gamma-skewness/tree/deno
+[@stdlib/stats/base/dists/gamma/skewness]: https://github.com/stdlib-js/stats-base-dists-gamma-skewness
 
-[@stdlib/stats/base/dists/gamma/stdev]: https://github.com/stdlib-js/stats-base-dists-gamma-stdev/tree/deno
+[@stdlib/stats/base/dists/gamma/stdev]: https://github.com/stdlib-js/stats-base-dists-gamma-stdev
 
-[@stdlib/stats/base/dists/gamma/variance]: https://github.com/stdlib-js/stats-base-dists-gamma-variance/tree/deno
+[@stdlib/stats/base/dists/gamma/variance]: https://github.com/stdlib-js/stats-base-dists-gamma-variance
 
-[@stdlib/stats/base/dists/gamma/cdf]: https://github.com/stdlib-js/stats-base-dists-gamma-cdf/tree/deno
+[@stdlib/stats/base/dists/gamma/cdf]: https://github.com/stdlib-js/stats-base-dists-gamma-cdf
 
-[@stdlib/stats/base/dists/gamma/logcdf]: https://github.com/stdlib-js/stats-base-dists-gamma-logcdf/tree/deno
+[@stdlib/stats/base/dists/gamma/logcdf]: https://github.com/stdlib-js/stats-base-dists-gamma-logcdf
 
-[@stdlib/stats/base/dists/gamma/logpdf]: https://github.com/stdlib-js/stats-base-dists-gamma-logpdf/tree/deno
+[@stdlib/stats/base/dists/gamma/logpdf]: https://github.com/stdlib-js/stats-base-dists-gamma-logpdf
 
-[@stdlib/stats/base/dists/gamma/mgf]: https://github.com/stdlib-js/stats-base-dists-gamma-mgf/tree/deno
+[@stdlib/stats/base/dists/gamma/mgf]: https://github.com/stdlib-js/stats-base-dists-gamma-mgf
 
-[@stdlib/stats/base/dists/gamma/pdf]: https://github.com/stdlib-js/stats-base-dists-gamma-pdf/tree/deno
+[@stdlib/stats/base/dists/gamma/pdf]: https://github.com/stdlib-js/stats-base-dists-gamma-pdf
 
-[@stdlib/stats/base/dists/gamma/quantile]: https://github.com/stdlib-js/stats-base-dists-gamma-quantile/tree/deno
+[@stdlib/stats/base/dists/gamma/quantile]: https://github.com/stdlib-js/stats-base-dists-gamma-quantile
 
 <!-- </toc-links> -->
 
