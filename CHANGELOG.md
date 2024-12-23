@@ -4,15 +4,197 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-01)
+## Unreleased (2024-12-23)
 
 <section class="packages">
 
 ### Packages
 
+<section class="package" id="stats-base-dists-gamma-kurtosis-unreleased">
+
+#### [@stdlib/stats/base/dists/gamma/kurtosis](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/stats/base/dists/gamma/kurtosis)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`cf1fd6a`](https://github.com/stdlib-js/stdlib/commit/cf1fd6a5a6e83c345aa5ad0ff830c0cbbfa3a15d) - add C implementation for `stats/base/dists/gamma/kurtosis` [(#4129)](https://github.com/stdlib-js/stdlib/pull/4129)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#3619](https://github.com/stdlib-js/stdlib/issues/3619)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="stats-base-dists-gamma-mean-unreleased">
+
+#### [@stdlib/stats/base/dists/gamma/mean](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/stats/base/dists/gamma/mean)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`8627f7a`](https://github.com/stdlib-js/stdlib/commit/8627f7a099aeb10863e83e4a1005dc4749b5d371) - add C implementation for `stats/base/dists/gamma/mean` [(#4122)](https://github.com/stdlib-js/stdlib/pull/4122)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#3622](https://github.com/stdlib-js/stdlib/issues/3622)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="stats-base-dists-gamma-mode-unreleased">
+
+#### [@stdlib/stats/base/dists/gamma/mode](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/stats/base/dists/gamma/mode)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`8e65742`](https://github.com/stdlib-js/stdlib/commit/8e65742b7b96655c166c7fc11d2399d7ca2bad01) - add C implementation for `stats/base/dists/gamma/mode` [(#4123)](https://github.com/stdlib-js/stdlib/pull/4123)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#3624](https://github.com/stdlib-js/stdlib/issues/3624)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="stats-base-dists-gamma-skewness-unreleased">
+
+#### [@stdlib/stats/base/dists/gamma/skewness](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/stats/base/dists/gamma/skewness)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`6043777`](https://github.com/stdlib-js/stdlib/commit/6043777df454d2e288e0f00ebe7cbc3b26423c1b) - add C implementation for `stats/base/dists/gamma/skewness` [(#4124)](https://github.com/stdlib-js/stdlib/pull/4124)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#3627](https://github.com/stdlib-js/stdlib/issues/3627)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="stats-base-dists-gamma-stdev-unreleased">
+
+#### [@stdlib/stats/base/dists/gamma/stdev](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/stats/base/dists/gamma/stdev)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`83aeb94`](https://github.com/stdlib-js/stdlib/commit/83aeb942ded7a90ee0b954fedc683f7b46ddd5e7) - add C implementation for `stats/base/dists/gamma/stdev` [(#4128)](https://github.com/stdlib-js/stdlib/pull/4128)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#3628](https://github.com/stdlib-js/stdlib/issues/3628)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 </section>
 
 <!-- /.packages -->
+
+<section class="issues">
+
+### Closed Issues
+
+A total of 5 issues were closed in this release:
+
+[#3619](https://github.com/stdlib-js/stdlib/issues/3619), [#3622](https://github.com/stdlib-js/stdlib/issues/3622), [#3624](https://github.com/stdlib-js/stdlib/issues/3624), [#3627](https://github.com/stdlib-js/stdlib/issues/3627), [#3628](https://github.com/stdlib-js/stdlib/issues/3628)
+
+</section>
+
+<!-- /.issues -->
 
 <section class="contributors">
 
@@ -21,8 +203,8 @@
 A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Philipp Burckhardt
--   Shivam
--   shivam Ahir
+-   Prashant Kumar Yadav
+-   Shivam Ahir
 
 </section>
 
@@ -34,8 +216,13 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`83aeb94`](https://github.com/stdlib-js/stdlib/commit/83aeb942ded7a90ee0b954fedc683f7b46ddd5e7) - **feat:** add C implementation for `stats/base/dists/gamma/stdev` [(#4128)](https://github.com/stdlib-js/stdlib/pull/4128) _(by Prashant Kumar Yadav, Philipp Burckhardt)_
+-   [`6043777`](https://github.com/stdlib-js/stdlib/commit/6043777df454d2e288e0f00ebe7cbc3b26423c1b) - **feat:** add C implementation for `stats/base/dists/gamma/skewness` [(#4124)](https://github.com/stdlib-js/stdlib/pull/4124) _(by Prashant Kumar Yadav, Philipp Burckhardt)_
+-   [`8e65742`](https://github.com/stdlib-js/stdlib/commit/8e65742b7b96655c166c7fc11d2399d7ca2bad01) - **feat:** add C implementation for `stats/base/dists/gamma/mode` [(#4123)](https://github.com/stdlib-js/stdlib/pull/4123) _(by Prashant Kumar Yadav, Philipp Burckhardt)_
+-   [`cf1fd6a`](https://github.com/stdlib-js/stdlib/commit/cf1fd6a5a6e83c345aa5ad0ff830c0cbbfa3a15d) - **feat:** add C implementation for `stats/base/dists/gamma/kurtosis` [(#4129)](https://github.com/stdlib-js/stdlib/pull/4129) _(by Prashant Kumar Yadav)_
+-   [`8627f7a`](https://github.com/stdlib-js/stdlib/commit/8627f7a099aeb10863e83e4a1005dc4749b5d371) - **feat:** add C implementation for `stats/base/dists/gamma/mean` [(#4122)](https://github.com/stdlib-js/stdlib/pull/4122) _(by Prashant Kumar Yadav)_
 -   [`fdd3963`](https://github.com/stdlib-js/stdlib/commit/fdd3963096904e999191e354dede1ca59461adc2) - **chore:** minor clean-up _(by Philipp Burckhardt)_
--   [`e399bfd`](https://github.com/stdlib-js/stdlib/commit/e399bfd09baf0b50ea9beb49f65867cd1a1e45b7) - **docs:** improve README examples of `stats/base/dists/gamma` namespace [(#1804)](https://github.com/stdlib-js/stdlib/pull/1804) _(by Shivam, Philipp Burckhardt, shivam Ahir)_
+-   [`e399bfd`](https://github.com/stdlib-js/stdlib/commit/e399bfd09baf0b50ea9beb49f65867cd1a1e45b7) - **docs:** improve README examples of `stats/base/dists/gamma` namespace [(#1804)](https://github.com/stdlib-js/stdlib/pull/1804) _(by Shivam Ahir, Philipp Burckhardt, shivam Ahir)_
 -   [`f387603`](https://github.com/stdlib-js/stdlib/commit/f387603e739f88a38af3263ce6ff675ad903ee8c) - **docs:** consistently use declarative instead of imperative sentences outside of intros _(by Philipp Burckhardt)_
 
 </details>
