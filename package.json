@@ -84,6 +84,7 @@
     "@stdlib/math-base-special-sqrt": "^0.2.2",
     "@stdlib/random-base-gamma": "^0.2.1",
     "@stdlib/random-base-randu": "^0.2.1",
+    "@stdlib/random-base-uniform": "^0.2.1",
     "@stdlib/stats-base-dists-degenerate-cdf": "^0.2.2",
     "@stdlib/stats-base-dists-degenerate-logcdf": "^0.2.2",
     "@stdlib/stats-base-dists-degenerate-logpdf": "^0.2.1",

@@ -4,11 +4,45 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-23)
+## Unreleased (2025-04-07)
 
 <section class="packages">
 
 ### Packages
+
+<section class="package" id="stats-base-dists-gamma-entropy-unreleased">
+
+#### [@stdlib/stats/base/dists/gamma/entropy](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/stats/base/dists/gamma/entropy)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`78c8b3c`](https://github.com/stdlib-js/stdlib/commit/78c8b3cd1b7116442b4fc0106cf4f6aec5bb0e51) - add C implementation for `stats/base/dists/gamma/entropy` [(#4349)](https://github.com/stdlib-js/stdlib/pull/4349)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#3618](https://github.com/stdlib-js/stdlib/issues/3618)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
 
 <section class="package" id="stats-base-dists-gamma-kurtosis-unreleased">
 
@@ -67,6 +101,40 @@ This release closes the following issue:
 This release closes the following issue:
 
 [#3622](https://github.com/stdlib-js/stdlib/issues/3622)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="stats-base-dists-gamma-mgf-unreleased">
+
+#### [@stdlib/stats/base/dists/gamma/mgf](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/stats/base/dists/gamma/mgf)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`a4cc596`](https://github.com/stdlib-js/stdlib/commit/a4cc596f9cdd579bad8e486f1feee2200f23ea9e) - add C implementation for `stats/base/dists/gamma/mgf` [(#4354)](https://github.com/stdlib-js/stdlib/pull/4354)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+A total of 2 issues were closed in this release:
+
+[#3623](https://github.com/stdlib-js/stdlib/issues/3623), [#5143](https://github.com/stdlib-js/stdlib/issues/5143)
 
 </section>
 
@@ -180,6 +248,40 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="stats-base-dists-gamma-variance-unreleased">
+
+#### [@stdlib/stats/base/dists/gamma/variance](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/stats/base/dists/gamma/variance)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`d9a9405`](https://github.com/stdlib-js/stdlib/commit/d9a940585dd1beedc9a197abbe19943e8233f941) - add C implementation for `stats/base/dists/gamma/variance` [(#3944)](https://github.com/stdlib-js/stdlib/pull/3944)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#3629](https://github.com/stdlib-js/stdlib/issues/3629)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 </section>
 
 <!-- /.packages -->
@@ -188,9 +290,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-A total of 5 issues were closed in this release:
+A total of 9 issues were closed in this release:
 
-[#3619](https://github.com/stdlib-js/stdlib/issues/3619), [#3622](https://github.com/stdlib-js/stdlib/issues/3622), [#3624](https://github.com/stdlib-js/stdlib/issues/3624), [#3627](https://github.com/stdlib-js/stdlib/issues/3627), [#3628](https://github.com/stdlib-js/stdlib/issues/3628)
+[#3618](https://github.com/stdlib-js/stdlib/issues/3618), [#3619](https://github.com/stdlib-js/stdlib/issues/3619), [#3622](https://github.com/stdlib-js/stdlib/issues/3622), [#3623](https://github.com/stdlib-js/stdlib/issues/3623), [#3624](https://github.com/stdlib-js/stdlib/issues/3624), [#3627](https://github.com/stdlib-js/stdlib/issues/3627), [#3628](https://github.com/stdlib-js/stdlib/issues/3628), [#3629](https://github.com/stdlib-js/stdlib/issues/3629), [#5143](https://github.com/stdlib-js/stdlib/issues/5143)
 
 </section>
 
@@ -200,11 +302,15 @@ A total of 5 issues were closed in this release:
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 7 people contributed to this release. Thank you to the following contributors:
 
+-   Aayush Khanna
+-   Karan Anand
+-   Neeraj Pathak
 -   Philipp Burckhardt
 -   Prashant Kumar Yadav
 -   Shivam Ahir
+-   ekambains
 
 </section>
 
@@ -216,6 +322,19 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`d9a9405`](https://github.com/stdlib-js/stdlib/commit/d9a940585dd1beedc9a197abbe19943e8233f941) - **feat:** add C implementation for `stats/base/dists/gamma/variance` [(#3944)](https://github.com/stdlib-js/stdlib/pull/3944) _(by Aayush Khanna, Philipp Burckhardt, stdlib-bot)_
+-   [`a1e230f`](https://github.com/stdlib-js/stdlib/commit/a1e230f29297caa89880e9c194c615a0400fb7bc) - **chore:** clean up cppcheck-suppress comments _(by Karan Anand)_
+-   [`f7988d3`](https://github.com/stdlib-js/stdlib/commit/f7988d3c02e0eff3bd9bd7523b5dc975bb98dc0e) - **bench:** fix `isnan` checks in `stats/base/dists` [(#5296)](https://github.com/stdlib-js/stdlib/pull/5296) _(by Karan Anand)_
+-   [`9d153b5`](https://github.com/stdlib-js/stdlib/commit/9d153b57100822ae6fe4cd3ad9475bf3ee4c8200) - **bench:** remove duplicate logic [(#5160)](https://github.com/stdlib-js/stdlib/pull/5160) _(by ekambains)_
+-   [`e61b1de`](https://github.com/stdlib-js/stdlib/commit/e61b1dee3334bacf30d213de5b5f1c7868c0753b) - **docs:** clean-up of C docstrings _(by Philipp Burckhardt)_
+-   [`b9a2014`](https://github.com/stdlib-js/stdlib/commit/b9a2014b1181d30f86aa489ba90ad1f892ade8e8) - **docs:** clean-up of C docstrings _(by Philipp Burckhardt)_
+-   [`c7860af`](https://github.com/stdlib-js/stdlib/commit/c7860af1896d84360294b65f3e37982ca631c435) - **bench:** refactor random number generation in `stats/base/dists/gamma` [(#4929)](https://github.com/stdlib-js/stdlib/pull/4929) _(by Karan Anand)_
+-   [`a4cc596`](https://github.com/stdlib-js/stdlib/commit/a4cc596f9cdd579bad8e486f1feee2200f23ea9e) - **feat:** add C implementation for `stats/base/dists/gamma/mgf` [(#4354)](https://github.com/stdlib-js/stdlib/pull/4354) _(by Neeraj Pathak, Philipp Burckhardt, stdlib-bot)_
+-   [`78c8b3c`](https://github.com/stdlib-js/stdlib/commit/78c8b3cd1b7116442b4fc0106cf4f6aec5bb0e51) - **feat:** add C implementation for `stats/base/dists/gamma/entropy` [(#4349)](https://github.com/stdlib-js/stdlib/pull/4349) _(by Neeraj Pathak, Philipp Burckhardt, stdlib-bot)_
+-   [`f75a0ce`](https://github.com/stdlib-js/stdlib/commit/f75a0cef6a3112b166dba04c13bada9763cec350) - **chore:** use excess kurtosis consistently _(by Philipp Burckhardt)_
+-   [`f3df15f`](https://github.com/stdlib-js/stdlib/commit/f3df15f118d563573f27d2d2b96e35b842f05a18) - **chore:** directly draw from the desired distribution instead of adding constants _(by Philipp Burckhardt)_
+-   [`fc0ff17`](https://github.com/stdlib-js/stdlib/commit/fc0ff171dab59e73e1748c1bff504166adc826c3) - **chore:** directly draw from the desired distribution instead of adding constants _(by Philipp Burckhardt)_
+-   [`b7867cb`](https://github.com/stdlib-js/stdlib/commit/b7867cbb3a4fc453e19203794402c36f19b264fd) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`83aeb94`](https://github.com/stdlib-js/stdlib/commit/83aeb942ded7a90ee0b954fedc683f7b46ddd5e7) - **feat:** add C implementation for `stats/base/dists/gamma/stdev` [(#4128)](https://github.com/stdlib-js/stdlib/pull/4128) _(by Prashant Kumar Yadav, Philipp Burckhardt)_
 -   [`6043777`](https://github.com/stdlib-js/stdlib/commit/6043777df454d2e288e0f00ebe7cbc3b26423c1b) - **feat:** add C implementation for `stats/base/dists/gamma/skewness` [(#4124)](https://github.com/stdlib-js/stdlib/pull/4124) _(by Prashant Kumar Yadav, Philipp Burckhardt)_
 -   [`8e65742`](https://github.com/stdlib-js/stdlib/commit/8e65742b7b96655c166c7fc11d2399d7ca2bad01) - **feat:** add C implementation for `stats/base/dists/gamma/mode` [(#4123)](https://github.com/stdlib-js/stdlib/pull/4123) _(by Prashant Kumar Yadav, Philipp Burckhardt)_
