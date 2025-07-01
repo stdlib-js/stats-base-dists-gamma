@@ -4,12 +4,15 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-09)
+## Unreleased (2025-07-01)
 
 <section class="features">
 
 ### Features
 
+-   [`728ba29`](https://github.com/stdlib-js/stdlib/commit/728ba29100d52c77c98d5ffc618b8accc6dcaf94) - add C implementation for `stats/base/dists/gamma/logcdf`
+-   [`e7b3a48`](https://github.com/stdlib-js/stdlib/commit/e7b3a483b78fc2619f8e1753f5c0b614a2e796a8) - add C implementation for gamma CDF
+-   [`7e1b98b`](https://github.com/stdlib-js/stdlib/commit/7e1b98bf3c2974b1bdb2065e01c3579cf7e6a5f0) - add C implementation for `stats/base/dists/gamma/pdf` [(#6396)](https://github.com/stdlib-js/stdlib/pull/6396)
 -   [`5c47b95`](https://github.com/stdlib-js/stdlib/commit/5c47b95b984cb0e088f642974e05ae9d7d6bffa0) - add C implementation `stats/base/dists/gamma/logpdf` [(#4800)](https://github.com/stdlib-js/stdlib/pull/4800)
 -   [`d9a9405`](https://github.com/stdlib-js/stdlib/commit/d9a940585dd1beedc9a197abbe19943e8233f941) - add C implementation for `stats/base/dists/gamma/variance` [(#3944)](https://github.com/stdlib-js/stdlib/pull/3944)
 -   [`a4cc596`](https://github.com/stdlib-js/stdlib/commit/a4cc596f9cdd579bad8e486f1feee2200f23ea9e) - add C implementation for `stats/base/dists/gamma/mgf` [(#4354)](https://github.com/stdlib-js/stdlib/pull/4354)
@@ -24,13 +27,23 @@
 
 <!-- /.features -->
 
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`1a48ebb`](https://github.com/stdlib-js/stdlib/commit/1a48ebbacff02aa8f374081b3b636bc2c0a027ef) - use correct Makefile for examples/c
+
+</section>
+
+<!-- /.bug-fixes -->
+
 <section class="issues">
 
 ### Closed Issues
 
-A total of 10 issues were closed in this release:
+A total of 11 issues were closed in this release:
 
-[#3618](https://github.com/stdlib-js/stdlib/issues/3618), [#3619](https://github.com/stdlib-js/stdlib/issues/3619), [#3621](https://github.com/stdlib-js/stdlib/issues/3621), [#3622](https://github.com/stdlib-js/stdlib/issues/3622), [#3623](https://github.com/stdlib-js/stdlib/issues/3623), [#3624](https://github.com/stdlib-js/stdlib/issues/3624), [#3627](https://github.com/stdlib-js/stdlib/issues/3627), [#3628](https://github.com/stdlib-js/stdlib/issues/3628), [#3629](https://github.com/stdlib-js/stdlib/issues/3629), [#5143](https://github.com/stdlib-js/stdlib/issues/5143)
+[#3618](https://github.com/stdlib-js/stdlib/issues/3618), [#3619](https://github.com/stdlib-js/stdlib/issues/3619), [#3621](https://github.com/stdlib-js/stdlib/issues/3621), [#3622](https://github.com/stdlib-js/stdlib/issues/3622), [#3623](https://github.com/stdlib-js/stdlib/issues/3623), [#3624](https://github.com/stdlib-js/stdlib/issues/3624), [#3625](https://github.com/stdlib-js/stdlib/issues/3625), [#3627](https://github.com/stdlib-js/stdlib/issues/3627), [#3628](https://github.com/stdlib-js/stdlib/issues/3628), [#3629](https://github.com/stdlib-js/stdlib/issues/3629), [#5143](https://github.com/stdlib-js/stdlib/issues/5143)
 
 </section>
 
@@ -42,6 +55,14 @@ A total of 10 issues were closed in this release:
 
 <details>
 
+-   [`e342a38`](https://github.com/stdlib-js/stdlib/commit/e342a388619ab71f5222105ec94c5029e42a4458) - **refactor:** update paths _(by Gururaj Gurram)_
+-   [`797e2e1`](https://github.com/stdlib-js/stdlib/commit/797e2e1202ae1d2c6f282e8ee3a47703e29480c9) - **chore:** clean-up and update tests _(by Athan Reines)_
+-   [`b9e85bb`](https://github.com/stdlib-js/stdlib/commit/b9e85bb880c148b413a2cd2d8be4146994d12775) - **style:** remove extra spaces _(by Philipp Burckhardt)_
+-   [`728ba29`](https://github.com/stdlib-js/stdlib/commit/728ba29100d52c77c98d5ffc618b8accc6dcaf94) - **feat:** add C implementation for `stats/base/dists/gamma/logcdf` _(by Philipp Burckhardt)_
+-   [`1a48ebb`](https://github.com/stdlib-js/stdlib/commit/1a48ebbacff02aa8f374081b3b636bc2c0a027ef) - **fix:** use correct Makefile for examples/c _(by Philipp Burckhardt)_
+-   [`e7b3a48`](https://github.com/stdlib-js/stdlib/commit/e7b3a483b78fc2619f8e1753f5c0b614a2e796a8) - **feat:** add C implementation for gamma CDF _(by Philipp Burckhardt)_
+-   [`7e1b98b`](https://github.com/stdlib-js/stdlib/commit/7e1b98bf3c2974b1bdb2065e01c3579cf7e6a5f0) - **feat:** add C implementation for `stats/base/dists/gamma/pdf` [(#6396)](https://github.com/stdlib-js/stdlib/pull/6396) _(by Harishchandra Reddy, Philipp Burckhardt, stdlib-bot)_
+-   [`f63f8df`](https://github.com/stdlib-js/stdlib/commit/f63f8df9abf7a7ddf9de4e895a64e4699d2f378b) - **style:** remove header section comments from C files _(by Philipp Burckhardt)_
 -   [`3565318`](https://github.com/stdlib-js/stdlib/commit/3565318e3639b3e44890ed15ccd73560d3cac14c) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`5f73301`](https://github.com/stdlib-js/stdlib/commit/5f73301a8509cc423a06b02140c4e316fd02ff49) - **docs:** minor clean-up _(by Philipp Burckhardt)_
 -   [`8f66d56`](https://github.com/stdlib-js/stdlib/commit/8f66d56a08779f053154777f958a7e18bd02187b) - **bench:** fix indentation and remove stray 0 _(by Philipp Burckhardt)_
@@ -79,11 +100,12 @@ A total of 10 issues were closed in this release:
 
 ### Contributors
 
-A total of 10 people contributed to this release. Thank you to the following contributors:
+A total of 11 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Athan Reines
 -   Gururaj Gurram
+-   Harishchandra Reddy
 -   Karan Anand
 -   Neeraj Pathak
 -   Philipp Burckhardt
