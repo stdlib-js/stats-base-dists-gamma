@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gamma@esm/index.mjs';
+import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gamma@v0.3.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { Gamma, cdf, entropy, kurtosis, logcdf, logpdf, mean, mgf, mode, pdf, quantile, skewness, stdev, variance } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gamma@esm/index.mjs';
+import { Gamma, cdf, entropy, kurtosis, logcdf, logpdf, mean, mgf, mode, pdf, quantile, skewness, stdev, variance } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gamma@v0.3.1-esm/index.mjs';
 ```
 
 #### gamma
@@ -141,7 +141,7 @@ import variance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-strided-varian
 import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@esm/index.mjs';
 import mean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-strided-mean@esm/index.mjs';
 import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs@esm/index.mjs';
-import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gamma@esm/index.mjs';
+import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gamma@v0.3.1-esm/index.mjs';
 
 // Define the shape and scale parameters:
 var alpha = 3.0; // shape parameter (α)
