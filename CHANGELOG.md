@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-02)
+## Unreleased (2026-09-21)
 
 <section class="issues">
 
@@ -24,6 +24,13 @@ This release closes the following issue:
 
 <details>
 
+-   [`af3cf68`](https://github.com/stdlib-js/stdlib/commit/af3cf68ec186df864909428b0b2febae7e5d92cb) - **test:** migrate `stats/base/dists/gamma/logpdf` to ULP-based assertions [(#15255)](https://github.com/stdlib-js/stdlib/pull/15255) _(by Athan Reines)_
+-   [`8cbd0a9`](https://github.com/stdlib-js/stdlib/commit/8cbd0a953ed8b3aeb91fae8718f09ea1bf140949) - **test:** migrate `stats/base/dists/gamma/stdev` to ULP-based assertions [(#15139)](https://github.com/stdlib-js/stdlib/pull/15139) _(by Athan Reines)_
+-   [`7e0157e`](https://github.com/stdlib-js/stdlib/commit/7e0157ec277ecedca62daa6372daf232ad8cbd26) - **test:** migrate `stats/base/dists/gamma/mode` to ULP-based assertions [(#15035)](https://github.com/stdlib-js/stdlib/pull/15035) _(by Athan Reines)_
+-   [`e134bfc`](https://github.com/stdlib-js/stdlib/commit/e134bfc0b5f3545299e5a7cda89c4ef7c2272864) - **test:** migrate `stats/base/dists/gamma/skewness` to ULP-based assertions [(#14918)](https://github.com/stdlib-js/stdlib/pull/14918) _(by Athan Reines)_
+-   [`759ca1c`](https://github.com/stdlib-js/stdlib/commit/759ca1c376215002861ec5919669ef88c961d3fe) - **test:** migrate `stats/base/dists/gamma/kurtosis` to ULP-based assertions [(#14524)](https://github.com/stdlib-js/stdlib/pull/14524) _(by Athan Reines)_
+-   [`57b9c44`](https://github.com/stdlib-js/stdlib/commit/57b9c44d351a44858b83509810dd96116ac6bb28) - **test:** migrate `stats/base/dists/gamma/pdf` to ULP-based assertions [(#14206)](https://github.com/stdlib-js/stdlib/pull/14206) _(by Athan Reines)_
+-   [`c6230dd`](https://github.com/stdlib-js/stdlib/commit/c6230dd99b8485b978ccbbf55e3bf3d4aba54359) - **test:** migrate `stats/base/dists/gamma/quantile` to ULP-based assertions [(#14167)](https://github.com/stdlib-js/stdlib/pull/14167) _(by Athan Reines)_
 -   [`7ae11bc`](https://github.com/stdlib-js/stdlib/commit/7ae11bca9e05607a14425d165dfed57584b880b8) - **chore:** clean-up [(#13834)](https://github.com/stdlib-js/stdlib/pull/13834) _(by Philipp Burckhardt)_
 -   [`10ee0a5`](https://github.com/stdlib-js/stdlib/commit/10ee0a56ed60ae3d051ff0426b8e203a29c44cdc) - **chore:** clean-up [(#13754)](https://github.com/stdlib-js/stdlib/pull/13754) _(by Philipp Burckhardt)_
 -   [`b5b7b4c`](https://github.com/stdlib-js/stdlib/commit/b5b7b4cf9937655b9167cb0145394c787f36faeb) - **refactor:** add `isnan` guards [(#13362)](https://github.com/stdlib-js/stdlib/pull/13362) _(by Philipp Burckhardt)_
