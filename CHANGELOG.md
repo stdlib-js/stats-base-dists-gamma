@@ -4,7 +4,27 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-21)
+## Unreleased (2026-11-08)
+
+<section class="features">
+
+### Features
+
+-   [`4f9e737`](https://github.com/stdlib-js/stdlib/commit/4f9e73706fb735dd6214ab910db97be8e5c0c459) - add C implementation for `stats/base/dists/gamma/quantile` [(#14657)](https://github.com/stdlib-js/stdlib/pull/14657)
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`ebec084`](https://github.com/stdlib-js/stdlib/commit/ebec0844648d51499375251f2da71a7016528245) - clamp only the upper bound and clean-up [(#16108)](https://github.com/stdlib-js/stdlib/pull/16108)
+
+</section>
+
+<!-- /.bug-fixes -->
 
 <section class="issues">
 
@@ -24,6 +44,16 @@ This release closes the following issue:
 
 <details>
 
+-   [`6219b20`](https://github.com/stdlib-js/stdlib/commit/6219b202e7b928a092d866c2f048ed189f5011ac) - **test:** migrate `stats/base/dists/gamma/logcdf` to ULP-based assertions [(#16305)](https://github.com/stdlib-js/stdlib/pull/16305) _(by Athan Reines)_
+-   [`ebec084`](https://github.com/stdlib-js/stdlib/commit/ebec0844648d51499375251f2da71a7016528245) - **fix:** clamp only the upper bound and clean-up [(#16108)](https://github.com/stdlib-js/stdlib/pull/16108) _(by Philipp Burckhardt)_
+-   [`8f62240`](https://github.com/stdlib-js/stdlib/commit/8f622403b8f6ff3781a17dc7ceb077e341e91aa3) - **docs:** clean-up [(#16084)](https://github.com/stdlib-js/stdlib/pull/16084) _(by Philipp Burckhardt)_
+-   [`b44ccd7`](https://github.com/stdlib-js/stdlib/commit/b44ccd7ba2859c64f3cced1bab1bf9d4a370da90) - **test:** fix typos in descriptions [(#15912)](https://github.com/stdlib-js/stdlib/pull/15912) _(by Philipp Burckhardt)_
+-   [`60842ae`](https://github.com/stdlib-js/stdlib/commit/60842aebb0278c65f51d71435ed72b7cc14d6889) - **test:** migrate `stats/base/dists/gamma/variance` to ULP-based assertions [(#15877)](https://github.com/stdlib-js/stdlib/pull/15877) _(by Athan Reines)_
+-   [`93a0c8c`](https://github.com/stdlib-js/stdlib/commit/93a0c8ced514d21580824781156cf345cf6305b2) - **test:** migrate `stats/base/dists/gamma/entropy` to ULP-based assertions [(#15918)](https://github.com/stdlib-js/stdlib/pull/15918) _(by Athan Reines)_
+-   [`63a4212`](https://github.com/stdlib-js/stdlib/commit/63a4212cfaf1c10b6013a05cf3fa1488e1f97606) - **test:** migrate `stats/base/dists/gamma/mgf` to ULP-based assertions [(#15950)](https://github.com/stdlib-js/stdlib/pull/15950) _(by Athan Reines)_
+-   [`4f9e737`](https://github.com/stdlib-js/stdlib/commit/4f9e73706fb735dd6214ab910db97be8e5c0c459) - **feat:** add C implementation for `stats/base/dists/gamma/quantile` [(#14657)](https://github.com/stdlib-js/stdlib/pull/14657) _(by Philipp Burckhardt, Karan Anand)_
+-   [`b333125`](https://github.com/stdlib-js/stdlib/commit/b3331252f2341acd8411bfb6a9df5238509d56b5) - **test:** migrate `stats/base/dists/gamma/mean` to ULP-based assertions [(#15683)](https://github.com/stdlib-js/stdlib/pull/15683) _(by Athan Reines)_
+-   [`de43dd8`](https://github.com/stdlib-js/stdlib/commit/de43dd873f2126f840633d50e25a93a2beb4176e) - **test:** migrate `stats/base/dists/gamma/cdf` to ULP-based assertions [(#15380)](https://github.com/stdlib-js/stdlib/pull/15380) _(by Athan Reines)_
 -   [`af3cf68`](https://github.com/stdlib-js/stdlib/commit/af3cf68ec186df864909428b0b2febae7e5d92cb) - **test:** migrate `stats/base/dists/gamma/logpdf` to ULP-based assertions [(#15255)](https://github.com/stdlib-js/stdlib/pull/15255) _(by Athan Reines)_
 -   [`8cbd0a9`](https://github.com/stdlib-js/stdlib/commit/8cbd0a953ed8b3aeb91fae8718f09ea1bf140949) - **test:** migrate `stats/base/dists/gamma/stdev` to ULP-based assertions [(#15139)](https://github.com/stdlib-js/stdlib/pull/15139) _(by Athan Reines)_
 -   [`7e0157e`](https://github.com/stdlib-js/stdlib/commit/7e0157ec277ecedca62daa6372daf232ad8cbd26) - **test:** migrate `stats/base/dists/gamma/mode` to ULP-based assertions [(#15035)](https://github.com/stdlib-js/stdlib/pull/15035) _(by Athan Reines)_
@@ -59,9 +89,10 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Karan Anand
 -   Partha Das
 -   Philipp Burckhardt
 -   Siddhartha Mondal
